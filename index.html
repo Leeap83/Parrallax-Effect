@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax scrolling effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <img src="city.jpg" alt="" class="parallax">
+        <div class="text-wrapper">
+            <h1 class="headline">New York</h1>
+            <h2 class="sub-headline">Scroll</h2>
+        </div>
+    </section>
+    <section class="overflow"></section>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const parallax = document.querySelector('.parallax');
+            let scrollPosition = window.pageYOffset;
+            // if you change the .5 the higher the number the faster the scroll  
+            // add a - to the number the text scrolls down
+            parallax.style.transform = 'translateY(' + scrollPosition * -.5 + 'px)';
+        });
+    </script>
+
+</body>
+
+</html>
