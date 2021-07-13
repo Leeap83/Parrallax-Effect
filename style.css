@@ -12,6 +12,8 @@ html {
 
 body {
     background: #1d4361;
+    color: white;
+    text-align: center;
 }
 
 .hero {
@@ -64,4 +66,8 @@ img {
 
 .overflow {
     height: 200vh;
+}
+
+#text {
+    font-size: 24px;
 }
